@@ -31,4 +31,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## main分支
 - 123.17-(了解)知识回顾(Av59594689,P123).mp4
--- 抽取 App.vue 中的 <main-tab-bar/>
+-- 抽取 App.vue 中的 < main-tab-bar/ >
