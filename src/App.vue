@@ -1,45 +1,21 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <tab-bar>
-      <tab-bar-item path="/home" activeColor="deepPink">
-        <img slot="item-icon" src="./assets/img/tabbar/sy.svg" alt="">
-        <img slot="item-icon-active" src="./assets/img/tabbar/syHover.svg" alt="">
-        <div slot="item-text">首页</div>
-      </tab-bar-item>
-      <tab-bar-item path="/category" activeColor="#00f">
-        <img slot="item-icon" src="./assets/img/tabbar/fl.svg" alt="">
-        <img slot="item-icon-active" src="./assets/img/tabbar/flHover.svg" alt="">
-        <div slot="item-text">分类</div>
-      </tab-bar-item>
-      <tab-bar-item path="/cart">
-        <img slot="item-icon" src="./assets/img/tabbar/gwc.svg" alt="">
-        <img slot="item-icon-active" src="./assets/img/tabbar/gwcHover.svg" alt="">
-        <div slot="item-text">购物车</div>
-      </tab-bar-item>
-      <tab-bar-item path="/profile">
-        <img slot="item-icon" src="./assets/img/tabbar/wo.svg" alt="">
-        <img slot="item-icon-active" src="./assets/img/tabbar/woHover.svg" alt="">
-        <div slot="item-text">我的</div>
-      </tab-bar-item>
-    </tab-bar>
+    <main-tab-bar/>
   </div>
 </template>
 <script>
-  import TabBar from './components/tabbar/TabBar'
-  import TabBarItem from './components/tabbar/TabBarItem'
+import MainTabBar from './components/MainTabBar'
   export default {
     name: 'App',
     components: {
-      TabBar,
-      TabBarItem
+      MainTabBar
     }
   }
 
 </script>
 <style>
   @import "./assets/css/base.css";
-
 </style>
 <!--
 118.12-(掌握)tabbar-基本结构的搭建(Av59594689,P118).mp4
@@ -48,4 +24,37 @@
 121.15-(掌握)tabbar-TabBarItem和路由结合效果(Av59594689,P121).mp4
 122.16-(掌握)tabbar-TabBarItem的颜色动态控制(Av59594689,P122).mp4
 123.17-(了解)知识回顾(Av59594689,P123).mp4
--->
+
+## 一、Vue Cli
+### 1.1.runtime-compiler和runtime-only的区别
+  - ESLint到底是什么？（代码检测）
+  - template => ast => render => vdom => 真实DOM
+  - render:(h)=>h,=>createElement
+### 1.2.Vue Cli3
+  - 如何通过CLI3创建项目
+  - CLI3的目录结构
+  - 配置文件：1.Vue UI 2.隐藏的配置文件 3.自定义 Vue.config.js
+## 二、Vue-Router
+### 2.1.什么是前端路由
+- 后端渲染\后端路由
+- 前后端分离
+- SPA\前端路由
+### 2.2.路由的基本配置
+- 安装vue-router
+- Vue.use->创建VueRouter对象->挂载到Vue实例上
+- 配置映射关系：1.创建组件 2.配置映射关系 3.使用 router-link/router-view
+### 2.3.细节处理
+- 默认路由：redirect
+- mode：history
+- router-link->tag/replace/active-class
+### 2.4.动态路由
+- /user/：id
+- this.￥route.params.id
+-
+-
+
+
+## 三、Vuex
+
+
+ -->
